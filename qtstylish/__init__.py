@@ -1,6 +1,6 @@
 # Set version
-from pkg_resources import get_distribution
-__version__ = get_distribution('qtstylish').version
+from importlib.metadata import version
+__version__ = version('qtstylish')
 
 # Imports
 from qtstylish.qtstylish import dark, light, ThemeSwitcher
